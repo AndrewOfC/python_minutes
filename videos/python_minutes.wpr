@@ -1,0 +1,13 @@
+#!wing
+#!version=7.0
+##################################################################
+# Wing project file                                              #
+##################################################################
+[project attributes]
+proj.file-list = [loc('zip/zip1.py'),
+                  loc('zip/zip2.py'),
+                  loc('zip/zip3.py'),
+                  loc('zip/zip4.py'),
+                  loc('zip/zip5.py')]
+proj.file-type = 'shared'
+proj.main-file = loc('zip/zip5.py')
