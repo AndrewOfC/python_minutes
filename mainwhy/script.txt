@@ -1,0 +1,20 @@
+
+(*  *)
+for many of us, our first python program looked like this
+
+
+(* with my mypy1,py on screen *)
+However after your first 5 minutes with python you should use this
+Why?
+
+(* mypy2.py on screen cut out testing code *) Say we make a cool function
+(* paste testing code back in) and we want to test it
+(* run mypy2.py *) Cool, it works!
+(* put mypy3.py on screen *) Now we want to bring it into another module
+(* run mypy3.py *) it works, but our testing code runs too :(
+
+you see when you run a python program, the file specified on the command line becomes the __main__ module
+
+by putting the if __name__ == '__main__' you're saying don't run this code unless we're the main.
+
+This way you get to keep your testing code and can freely import it into other modules

@@ -1,10 +1,16 @@
 #!wing
-#!version=7.0
+#!version=8.0
 ##################################################################
 # Wing project file                                              #
 ##################################################################
 [project attributes]
 proj.directory-list = [{'dirloc': loc('basic_program'),
+                        'excludes': (),
+                        'filter': '*',
+                        'include_hidden': False,
+                        'recursive': True,
+                        'watch_for_changes': True},
+                       {'dirloc': loc('looping'),
                         'excludes': (),
                         'filter': '*',
                         'include_hidden': False,
@@ -18,4 +24,4 @@ proj.file-list = [loc('zip/zip0.py'),
                   loc('zip/zip5.py'),
                   loc('zip/zip6.py')]
 proj.file-type = 'shared'
-proj.main-file = loc('zip/zip6.py')
+proj.main-file = loc('looping/loop6_final.py')
