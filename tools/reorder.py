@@ -10,7 +10,7 @@ def main():
     parser.add_argument('prefix', nargs=1)
     parser.add_argument('--suffix', default=".py",)
     parser.add_argument("--increment", default=1)
-    parser.add_argument("--command", default="git mv ")
+    parser.add_argument("--command", default="mv ")
 
     options = parser.parse_args()
 
@@ -33,7 +33,10 @@ def main():
     for place, f, prefix, suffix in sfilenames:
         if place is None:
             continue
-        cmd = f"{options.command} {f} {prefix}{number}{suffix} &&"
+        new_place = f"{prefix}{number}{suffix}"
+        if( f == new_place ):
+            continue
+        cmd = f"{options.command} {f} {new_place} &&"
         print(cmd)
         number += options.increment
 
