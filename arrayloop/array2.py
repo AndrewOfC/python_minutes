@@ -2,8 +2,8 @@
 def main():
     strings = ['one', 'two', 'three']
     i = 0
-    for string in strings:
-        print(f"{i}: {string}")
+    for s in strings:
+        print(f"{i}: {s}")
         i += 1
 
     return

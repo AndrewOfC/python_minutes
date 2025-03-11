@@ -2,7 +2,7 @@
 def main():
 
     strings = ['one', 'two', 'three']
-    for i in range(len(strings)):
+    for i in range(0, len(strings)):
         print(f"{i}: {strings[i]}")
 
     return
