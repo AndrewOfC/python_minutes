@@ -8,7 +8,7 @@ and a Pythonic way
 
 (I don't care what the OCDs at the OED say, "Pythonic" is a word.)
 
-Please like, share, subscribe and if there's something about python you want to learn condensed in a minute, leave a comment.
+Please like, share, subscribe and if there's something about python you want to learn condensed into a minute, leave a comment.
 
 # Script
 
@@ -25,4 +25,4 @@ We see a slight improvement here. (* highlight the strings var *) At least we're
 
 If you do need to have the indices of the elements you're iterating over, this is the most pythonic way of doing it.  (* highlight i,s *) Note the python for-loops have the capacity to manage multiple variables 
 
-enumerate is a builtin function that produces aq 'generator' that yields the index,element.
+enumerate is a builtin function that produces a 'generator' that yields the index,element.
