@@ -11,6 +11,14 @@ def main():
     for i, fib in zip(range(20), fibber()): # f0, f1 in zip(range(20), gFO(), gF1()):
         print(f"{i}: {fib}")
 
+    for i, fib in enumerate(fibber(n=20)):
+        print(f"{i}: {fib}")
+
+    for fib in fibber(n=20):
+        print(fib)
+
+
+
     return
 
 if __name__ == '__main__':
